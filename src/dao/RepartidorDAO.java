@@ -17,7 +17,7 @@ public class RepartidorDAO {
         String sql = "SELECT id, nombre FROM repartidor ORDER BY nombre";
         List<Repartidor> lista = new ArrayList<>();
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
 
@@ -33,7 +33,7 @@ public class RepartidorDAO {
     public boolean guardar(Repartidor repartidor) {
         String sql = "INSERT INTO repartidor (nombre) VALUES (?)";
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, repartidor.getNombre());

@@ -18,7 +18,7 @@ public class PedidoDAO {
         String sql = "INSERT INTO pedido (direccion, tipo, estado) VALUES (?, ?, ?)";
         int idGenerado = -1;
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
             ps.setString(1, pedido.getDireccionEntrega());
@@ -42,7 +42,7 @@ public class PedidoDAO {
         String sql = "SELECT id, direccion, tipo, estado FROM pedido ORDER BY id";
         List<Object[]> filas = new ArrayList<>();
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
 
@@ -63,7 +63,7 @@ public class PedidoDAO {
     public boolean actualizarEstado(int idPedido, String nuevoEstado) {
         String sql = "UPDATE pedido SET estado = ? WHERE id = ?";
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, nuevoEstado);

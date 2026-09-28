@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1eea317-4e57-4ba9-a723-46dbb9e13263" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+    <list default="true" id="c1eea317-4e57-4ba9-a723-46dbb9e13263" name="Changes" comment="Agregar script SQL de la base de datos speedfast_db">
+      <change afterPath="$PROJECT_DIR$/src/vista/VentanaRegistroRepartidor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ConexionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ConexionBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/EntregaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/EntregaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/RepartidorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/RepartidorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vista/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790043146590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Agregar script SQL de la base de datos speedfast_db">
+      <option name="closed" value="true" />
+      <created>1790605074549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1790605074549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +146,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Semana 6: interfaz gráfica Swing con registro, listado y asignación de pedidos" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="Agregar script SQL de la base de datos speedfast_db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregar script SQL de la base de datos speedfast_db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -141,11 +157,6 @@
           <line>18</line>
           <properties field="repartidor" class="modelo.Pedido" />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/vista/VentanaPrincipal.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

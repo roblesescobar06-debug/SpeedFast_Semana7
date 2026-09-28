@@ -15,7 +15,7 @@ public class EntregaDAO {
     public boolean guardar(Entrega entrega) {
         String sql = "INSERT INTO entrega (id_pedido, id_repartidor, fecha, hora) VALUES (?, ?, ?, ?)";
 
-        try (Connection con = ConexionDB.conectar();
+        try (Connection con = ConexionBD.conectar();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setInt(1, entrega.getIdPedido());

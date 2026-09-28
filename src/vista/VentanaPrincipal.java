@@ -38,22 +38,25 @@ public class VentanaPrincipal extends JFrame {
         panelEncabezado.add(lblSubtitulo);
 
         // ----- Botones del menú -----
-        JPanel panelBotones = new JPanel(new GridLayout(4, 1, 10, 12));
+        JPanel panelBotones = new JPanel(new GridLayout(5, 1, 10, 12));
         panelBotones.setBorder(BorderFactory.createEmptyBorder(10, 60, 10, 60));
 
         JButton btnRegistrar = crearBoton("Registrar pedido");
         JButton btnListar = crearBoton("Listar pedidos");
+        JButton btnRepartidores = crearBoton("Registrar repartidor");
         JButton btnAsignar = crearBoton("Asignar repartidor / Iniciar entrega");
         JButton btnSalir = crearBoton("Salir");
 
         panelBotones.add(btnRegistrar);
         panelBotones.add(btnListar);
+        panelBotones.add(btnRepartidores);
         panelBotones.add(btnAsignar);
         panelBotones.add(btnSalir);
 
         // ----- Navegación entre ventanas -----
         btnRegistrar.addActionListener(e -> new VentanaRegistroPedido(controlador).setVisible(true));
         btnListar.addActionListener(e -> new VentanaListaPedidos().setVisible(true));
+        btnRepartidores.addActionListener(e -> new VentanaRegistroRepartidor().setVisible(true));
         btnAsignar.addActionListener(e -> new VentanaAsignarRepartidor(controlador).setVisible(true));
         btnSalir.addActionListener(e -> confirmarSalida());
 
